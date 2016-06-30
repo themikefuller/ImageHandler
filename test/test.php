@@ -16,7 +16,8 @@ echo $img->message . "\r\n";
 // Resize the image and adjust the quality
 $maxsize = 150;
 $quality = 20;
-$img->ResizeImage($maxsize,$quality);
+$maxKB = 75;
+$img->ResizeImage($maxsize,$quality,$maxKB);
 echo $img->message . "\r\n";
 
 // Save the image
